@@ -136,12 +136,12 @@ background-color:var(--background-color);
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
-}
-
-.link_now{  
     position: relative;
 }
+
+/* .link_now{  
+    position: relative;
+} */
 .underline_title::after{
     display: block;
     position: absolute;
