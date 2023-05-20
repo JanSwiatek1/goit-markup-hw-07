@@ -40,6 +40,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
+
+    .footer_button {
+        padding: 0;
+        margin-left: 12px;
+    }
 }
 
  .footer_list_positioner_logo {
@@ -125,7 +130,16 @@
       cursor: pointer;
   
     .container_social {
-      padding: 0;
-      margin-left: 12px;
-  }
+        padding: 0;
+        margin-left: 12px;
+
+        // form {
+        //     margin-top: 20px;
+        // }
+    }
 }
+
+.container_social form {
+    margin-top: 20px;
+}
+
