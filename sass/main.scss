@@ -1,5 +1,6 @@
-@use "utils/variable" as *;
-@import "components/page-header";
-@import "components/page-footer";
-@import "components/classes";
+@use "./utils/variable" as *;
+@import "./components/page-header";
+@import "./components/page-main";
+@import "./components/page-footer";
+@import "./components/classes";
 

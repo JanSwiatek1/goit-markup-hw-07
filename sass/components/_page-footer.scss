@@ -1,0 +1,131 @@
+.footer {
+    display: flex;
+    background-color: #2F303A;
+    color: #FFFFFF;
+
+    height: 252px;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .link{
+        color: $link-color;
+        font-size: 14px;
+        line-height: 2.4;
+    }
+
+    & .logo{
+        color: #FFFFFF;
+    }
+}
+
+.container_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 60px;
+    list-style-type: none;
+
+
+    & p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+
+ .footer_list_positioner_logo {
+     padding-top: 90px;
+ }
+
+.footer_adress {
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    .link{
+     margin-bottom: 9px;
+     font-weight: 400;
+     letter-spacing: 0.03em;
+    }
+
+    & p{
+        margin-bottom: 9px;
+        margin-top: 20px;
+
+    }
+ }
+
+ .footer_socialmedia {
+     display: flex;
+     justify-content: space-between;
+     padding: 0;
+     list-style-type: none;
+     gap: 10px;
+ 
+
+    & svg {
+        padding: 12px;
+        fill: #FFFFFF;
+    }
+
+    & li {
+        height: 1px;
+    }
+
+    & a {
+        display: flex;
+        height: 44px;
+        border-radius: 90%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    & a:focus,
+    & a:hover {
+
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: $button-color;
+        height: 44px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ }
+
+  .footer_list_positioner {
+      padding-top: 56px;
+  }
+
+  .footer_email_button {
+      display: flex;
+      justify-content: center;
+  }
+  .footer_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $button-color;
+      color: #fff;
+      width: 200px;
+      height: 50px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 0;
+      fill: #fff;
+      gap: 25px;
+      cursor: pointer;
+  
+    .container_social {
+      padding: 0;
+      margin-left: 12px;
+  }
+}
