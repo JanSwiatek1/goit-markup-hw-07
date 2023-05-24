@@ -1,6 +1,6 @@
-.pictures_staff {
+.pictures__staff {
     background-color: $background-color;
-    &_box {
+    &-box {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 4px 4px;
         background-color: #FFFFFF;
@@ -9,7 +9,7 @@
         height: 428px;
     }
 
-    &_inf {
+    &-inf {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,7 +17,7 @@
         height: 120px;
 
 
-        p {
+        &-name {
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;

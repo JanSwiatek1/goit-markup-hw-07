@@ -1,4 +1,4 @@
-.header_box {
+.header__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,8 +9,8 @@ header{
 
 }
 
-.header_flex {
-    @extend .header_box;
+.header__flex {
+    @extend .header__box;
     list-style-type: none;
     height: 80px;
     background-color: #fff;
@@ -18,7 +18,7 @@ header{
 }
 
 
-.header_list {
+.header__list {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -31,7 +31,7 @@ header{
 
 }
 
-.header__list__tel {
+.header__tel {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header{
     fill: $svg-color;
 
 
-    &__link {
+    &-link {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -55,8 +55,8 @@ header{
         letter-spacing: 0.02em;
     }
 
-    &__link:focus,
-    &__link:hover {
+    &-link:focus,
+    &-link:hover {
         fill: $button-color;
         color: $button-color;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,7 +74,7 @@ header{
 
 // }
 
-.link_now {
+.link__now {
     text-decoration: none;
     cursor: pointer;
     align-items: center;
@@ -89,7 +89,7 @@ header{
 
 
 
-.underline_title::after {
+.underline__title::after {
     display: block;
     position: absolute;
     content: '';

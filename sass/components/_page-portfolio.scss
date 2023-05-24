@@ -1,13 +1,13 @@
-.section_listbuttons {
+.section__listbuttons {
     padding-top: 94px;
     padding-bottom: 50px;
 
-    .list_main {
+    .list__main {
         justify-content: center;
         gap: 15px;
     }
 }
-.button_portfolio {
+.button__portfolio {
     padding: 6px 22px 6px 22px;
     background-color: $background-color;
     border-color: $background-color;
@@ -30,7 +30,7 @@
 
 }
 
-.list_block_portfolio{
+.portfolio__list-block{
     display: flex;   
     justify-content: space-between;
     align-items: center;
@@ -39,14 +39,15 @@
     padding: 0;  
     gap: 30px;
 
-    figure {
+
+    &-tile {
         border: 1px solid #EEEEEE;
         padding: 0;
     }
 
 }
 
-.section_portfolio {
+.section__portfolio {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,10 +55,11 @@
 
 }
 
-.moving_box {
+.moving__box {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    // height:404px;
 
     &:hover {
         background: #FFFFFF;
@@ -65,18 +67,28 @@
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
     }
+    &-images {
+        position: relative;
+    }
 }
 
 
-.inf_picture_portfolio {
+.portfolio__inf-picture {
     background-color: #FFFFFF;
     padding: 20px 24px 20px 24px;
     transform: translatex(0);
+    height: 90px;
 
-    p {
+    &-text {
         font-weight: 400px;
         font-size: 18px;
         line-height: 36px;
+    }
+    &-title{
+        font-weight: 700;
+         font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
     }
 }
 
@@ -91,13 +103,14 @@
     transform: translatey(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .moving_box:hover &{
+    .moving__box:hover &{
         transform: translatey(-100%);
         overflow: hidden;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    p {
+
+    .portfolio__inf-picture-text {
         color: #fff;
         font-weight: 400;
         font-size: 18px;
@@ -118,6 +131,3 @@
     padding-left: 4px;
 }
 
-.moving_box_images{
-    position: relative;
-}

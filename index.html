@@ -30,14 +30,14 @@
   </head>
   <body>
     <header>
-      <div class="header_box container">
-        <box class="header_flex">
+      <div class="header__box container">
+        <box class="header__flex">
           <a href="/" class="logo"><span class="blue">Web</span>Studio</a>
           <nav>
-            <ul class="header_list">
+            <ul class="header__list">
               <li>
-                <a href="index.html" class="link_now">
-                  <span class="underline_title">Agencja</span>
+                <a href="index.html" class="link__now">
+                  <span class="underline__title">Agencja</span>
                 </a>
               </li>
               <li>
@@ -48,9 +48,9 @@
           </nav>
         </box>
         <box>
-          <ul class="header__list__tel">
+          <ul class="header__tel">
             <li>
-              <a href="info@devstudio.com" class="header__list__tel__link"
+              <a href="info@devstudio.com" class="header__tel-link"
                 ><svg width="18" height="14">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -58,7 +58,7 @@
               >
             </li>
             <li>
-              <a href="+48111111111" class="header__list__tel__link"
+              <a href="+48111111111" class="header__tel-link"
                 ><svg width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -83,7 +83,7 @@
       </section>
       <section class="section__articles">
         <div class="container">
-          <ul class="section__articles__list-text">
+          <ul class="section__articles-list">
             <li>
               <div class="section__articles-grafic">
                 <svg width="70" height="70">
@@ -91,7 +91,7 @@
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p>
+              <p class="section__articles-list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
@@ -104,7 +104,7 @@
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p>
+              <p class="section__articles-list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
@@ -117,7 +117,7 @@
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p>
+              <p class="section__articles-list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
@@ -130,7 +130,7 @@
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p>
+              <p class="section__articles-list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
@@ -179,12 +179,12 @@
           </ul>
         </div>
       </section>
-      <section class="section pictures_staff">
+      <section class="section pictures__staff">
         <div class="container">
-          <h2 class="section_headline_h2">Nasz zespół</h2>
-          <ul class="list_main">
+          <h2 class="section__headline-h2">Nasz zespół</h2>
+          <ul class="list__main">
             <li>
-              <figure class="pictures_staff_box">
+              <figure class="pictures__staff-box">
                 <img
                   class="picture"
                   src="images/img-4.jpg"
@@ -192,8 +192,8 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="pictures_staff_inf">
-                  <p>John Doe</p>
+                <figcaption class="pictures__staff-inf">
+                  <p class="pictures__staff-name">John Doe</p>
                   <p class="gray">Product Designer</p>
                   <ul class="socialmedia">
                     <li class="socialmedia__il-part">
@@ -237,15 +237,15 @@
               </figure>
             </li>
             <li>
-              <figure class="pictures_staff_box">
+              <figure class="pictures__staff-box">
                 <img
                   src="images/img-1.jpg"
                   alt="John Doe"
                   width="270"
                   height="260"
                 />
-                <figcaption class="pictures_staff_inf">
-                  <p>John Doe</p>
+                <figcaption class="pictures__staff-inf">
+                  <p class="pictures__staff-name">John Doe</p>
                   <p class="gray">Frontend Developer</p>
                   <ul class="socialmedia">
                     <li class="socialmedia__il-part">
@@ -289,15 +289,15 @@
               </figure>
             </li>
             <li>
-              <figure class="pictures_staff_box">
+              <figure class="pictures__staff-box">
                 <img
                   src="images/img-2.jpg"
                   alt="John Doe"
                   width="270"
                   height="260"
                 />
-                <figcaption class="pictures_staff_inf">
-                  <p>John Doe</p>
+                <figcaption class="pictures__staff-inf">
+                  <p class="pictures__staff-name">John Doe</p>
                   <p class="gray">Marketing</p>
                   <ul class="socialmedia">
                     <li class="socialmedia__il-part">
@@ -341,14 +341,14 @@
               </figure>
             </li>
             <li>
-              <figure class="pictures_staff_box">
+              <figure class="pictures__staff-box">
                 <img
                   src="images/img-3.jpg"
                   alt="John Doe"
                   width="270"
                   height="260"
                 />
-                <figcaption class="pictures_staff_inf">
+                <figcaption class="pictures__staff-inf">
                   <p>John Doe</p>
                   <p class="gray">UI Designer</p>
                   <ul class="socialmedia">
@@ -397,41 +397,41 @@
       </section>
       <section>
         <div class="container margin">
-          <h2 class="section_headline_h2">Nasi klienci</h2>
-          <ul class="list_clients">
+          <h2 class="section__headline-h2">Nasi klienci</h2>
+          <ul class="list__clients">
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo"></use></svg
               ></a>
             </li>
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo-1"></use></svg
               ></a>
             </li>
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo-2"></use></svg
               ></a>
             </li>
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo-3"></use></svg
               ></a>
             </li>
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo-4"></use></svg
               ></a>
             </li>
             <li>
-              <a href="/klient">
-                <svg width="106" height="60">
+              <a href="/klient" class="list__clients-brand">
+                <svg width="106" height="60" class="list__clients-image">
                   <use href="./images/icons.svg#icon-Logo-5"></use></svg
               ></a>
             </li>
