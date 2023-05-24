@@ -78,3 +78,16 @@ figure {
     margin-bottom: 94px;
 }
 
+.list__main {
+    display: flex;
+    list-style-type: none;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
