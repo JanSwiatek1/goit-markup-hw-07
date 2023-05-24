@@ -31,7 +31,7 @@ header{
 
 }
 
-.header_list_tel {
+.header__list__tel {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -42,19 +42,38 @@ header{
     fill: $svg-color;
 
 
-    & a {
+    &__link {
         display: flex;
         align-items: center;
         gap: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $link-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
     }
 
-    & a:focus,
-    & a:hover {
+    &__link:focus,
+    &__link:hover {
         fill: $button-color;
         color: $button-color;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
+// .link_tel {
+//     text-decoration: none;
+//     cursor: pointer;
+//     color: var(--link-clolor);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.02em;
+
+// }
+
 .link_now {
     text-decoration: none;
     cursor: pointer;

@@ -81,12 +81,15 @@
             <li>
               <div class="moving_box">
                 <figure>
-                  <img
-                    src="images/img-3_5.jpg"
-                    alt="Zdjęcie monitora"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="moving_box_images">
+                    <img
+                      src="images/img-3_5.jpg"
+                      alt="Zdjęcie monitora"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="overlay"></div>
+                  </div>
 
                   <figcaption class="inf_picture_portfolio">
                     <p>Technocrack</p>
@@ -310,11 +313,11 @@
 
     <footer class="footer">
       <section class="container">
-        <ul class="container_social">
-          <li class="footer_list_positioner_logo">
+        <ul class="container__social">
+          <li class="footer__list__positioner__logo">
             <a href="/" class="logo"><span class="blue">Web</span>Studio</a>
 
-            <address class="footer_adress">
+            <address class="footer__adress">
               <p>m. Warszawa, Aleje Jerozolimskie 21</p>
               <a href="info@devstudio.com" class="link">info@devstudio.com</a>
               <a href="+48111111111" class="link">+48 111 111 111</a>
@@ -323,42 +326,54 @@
           <li>
             <p>DOŁĄCZ DO NAS</p>
             <br />
-            <ul class="footer_socialmedia">
-              <li>
-                <a href="https://www.instagram.com"
-                  ><svg width="44" height="44">
+            <ul class="footer__socialmedia">
+              <li class="footer__socialmedia__li-part">
+                <a
+                  href="https://www.instagram.com"
+                  class="footer__socialmedia__link"
+                  ><svg
+                    width="44"
+                    height="44"
+                    class="footer__socialmedia__foto"
+                  >
                     <use href="./images/icons.svg#icon-instagram-2-1"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="https://twitter.com">
-                  <svg width="44" height="44">
+              <li class="footer__socialmedia__li-part">
+                <a href="https://twitter.com" class="footer__socialmedia__link">
+                  <svg width="44" height="44" class="footer__socialmedia__foto">
                     <use href="./images/icons.svg#icon-Vector"></use></svg
                 ></a>
               </li>
-              <li>
-                <a href="https://www.facebook.com">
-                  <svg width="44" height="44">
+              <li class="footer__socialmedia__li-part">
+                <a
+                  href="https://www.facebook.com"
+                  class="footer__socialmedia__link"
+                >
+                  <svg width="44" height="44" class="footer__socialmedia__foto">
                     <use href="./images/icons.svg#icon-Vector-1"></use></svg
                 ></a>
               </li>
-              <li>
-                <a href="https://linkedin.com">
-                  <svg width="44" height="44">
+              <li class="footer__socialmedia__li-part">
+                <a
+                  href="https://linkedin.com"
+                  class="footer__socialmedia__link"
+                >
+                  <svg width="44" height="44" class="footer__socialmedia__foto">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="footer_list_positioner">
+          <li class="footer__list__positioner">
             <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
             <form
               name="signup_form"
               autocomplete="on"
               novalidate
-              class="footer_email_button"
+              class="footer__email__button"
             >
               <label>
                 <input
@@ -368,7 +383,7 @@
                   class="formula"
                 />
               </label>
-              <button type="submit" class="footer_button">
+              <button type="submit" class="footer__button">
                 Zapisz się
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>

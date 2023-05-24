@@ -12,6 +12,7 @@
     background-color: $background-color;
     border-color: $background-color;
     border-radius: 8%;
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -70,11 +71,10 @@
 .inf_picture_portfolio {
     background-color: #FFFFFF;
     padding: 20px 24px 20px 24px;
-    padding-top: 1%;
     transform: translatex(0);
 
     p {
-        font-weight: 700;
+        font-weight: 400px;
         font-size: 18px;
         line-height: 36px;
     }
@@ -114,3 +114,10 @@
 //     transition-duration: 250ms;
 //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // }
+.form--label{
+    padding-left: 4px;
+}
+
+.moving_box_images{
+    position: relative;
+}
