@@ -29,10 +29,10 @@
     <title>Document_7</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__box container">
         <box class="header__flex">
-          <a href="/" class="logo"><span class="blue">Web</span>Studio</a>
+          <a href="/" class="logo">Web<span class="logo-black">Studio</span></a>
           <nav>
             <ul class="header__list">
               <li>
@@ -81,56 +81,56 @@
           </button>
         </div>
       </section>
-      <section class="section__articles">
+      <section class="articles">
         <div class="container">
-          <ul class="section__articles-list">
+          <ul class="articles__list">
             <li>
-              <div class="section__articles-grafic">
+              <div class="articles__grafic">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="section__articles-list-text">
+              <p class="articles__list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
               </p>
             </li>
             <li>
-              <div class="section__articles-grafic">
+              <div class="articles__grafic">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="section__articles-list-text">
+              <p class="articles__list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
               </p>
             </li>
             <li>
-              <div class="section__articles-grafic">
+              <div class="articles__grafic">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="section__articles-list-text">
+              <p class="articles__list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
               </p>
             </li>
             <li>
-              <div class="section__articles-grafic">
+              <div class="articles__grafic">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="section__articles-list-text">
+              <p class="article__list-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 laboriosam natus cum praesentium amet similique, unde aperiam
                 molestiae blanditiis.
@@ -139,7 +139,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section section__negative-margin">
         <div class="container">
           <h2 class="section__headline-h2">Czym się zajmujemy</h2>
           <ul class="list__main-pictures">
@@ -349,7 +349,7 @@
                   height="260"
                 />
                 <figcaption class="pictures__staff-inf">
-                  <p>John Doe</p>
+                  <p class="pictures__staff-name">John Doe</p>
                   <p class="gray">UI Designer</p>
                   <ul class="socialmedia">
                     <li class="socialmedia__il-part">
@@ -444,16 +444,20 @@
       <section class="container">
         <ul class="container__social">
           <li class="footer__list__positioner__logo">
-            <a href="/" class="logo"><span class="blue">Web</span>Studio</a>
+            <a href="/" class="logo"
+              >Web<span class="logo-white">Studio</span></a
+            >
 
             <address class="footer__adress">
-              <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+              <p class="footer__adress-info">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </p>
               <a href="info@devstudio.com" class="link">info@devstudio.com</a>
               <a href="+48111111111" class="link">+48 111 111 111</a>
             </address>
           </li>
           <li>
-            <p>DOŁĄCZ DO NAS</p>
+            <p class="container__social-info">DOŁĄCZ DO NAS</p>
             <br />
             <ul class="footer__socialmedia">
               <li class="footer__socialmedia__li-part">
@@ -497,7 +501,7 @@
             </ul>
           </li>
           <li class="footer__list__positioner">
-            <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
+            <p class="container__social-info">ZAPISZ SIĘ DO NEWSLETTERA</p>
             <form
               name="signup__form"
               autocomplete="on"
@@ -526,85 +530,87 @@
 
     <box class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close_btn" data-modal-close>X</button>
+        <button type="button" class="close__btn" data-modal-close>X</button>
         <form name="signup_form" autocomplete="on" novalidate>
-          <h2>Zostaw swoje dane w formularzu poniżej</h2>
-          <ul class="list_window">
+          <h2 class="modal__headline">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <ul class="list__window">
             <li>
               <ul class="labels_window">
-                <li class="modal_list">
+                <li class="modal__list">
                   <label>
-                    <span class="label_title">Imie</span>
+                    <span class="label__title">Imie</span>
 
                     <input
                       type="text"
                       name="imie"
                       placeholder=" "
-                      class="formula_window"
+                      class="formula__window"
                       required
                     />
-                    <svg class="svg_box" width="12" height="12">
+                    <svg class="svg__box" width="12" height="12">
                       <use href="./images/icons.svg#icon-Vector-22"></use>
                     </svg>
                   </label>
                 </li>
 
-                <li class="modal_list">
+                <li class="modal__list">
                   <label>
-                    <span class="label_title">Telefon</span>
+                    <span class="label__title">Telefon</span>
 
                     <input
                       type="text"
                       name="telefon"
                       placeholder=" "
-                      class="formula_window"
+                      class="formula__window"
                       required
                     />
-                    <svg class="svg_box" width="12" height="12">
+                    <svg class="svg__box" width="12" height="12">
                       <use href="./images/icons.svg#icon-Vector0"></use>
                     </svg>
                   </label>
                 </li>
-                <li class="modal_list">
+                <li class="modal__list">
                   <label>
-                    <span class="label_title">Email</span>
+                    <span class="label__title">Email</span>
 
                     <input
                       type="text"
                       name="email"
                       placeholder=" "
-                      class="formula_window"
+                      class="formula__window"
                       required
                     />
-                    <svg class="svg_box" width="12" height="12">
+                    <svg class="svg__box" width="12" height="12">
                       <use href="./images/icons.svg#icon-Vector-11"></use>
                     </svg>
                   </label>
                 </li>
-                <li class="modal_list">
+                <li class="modal__list">
                   <label>
-                    <span class="label_title"> Komentarz</span>
+                    <span class="label__title"> Komentarz</span>
                     <textarea
                       name="feedback"
                       rows="8"
                       placeholder="Wprowadź tekst"
                       style="resize: none"
-                      class="formula_window_textarea"
+                      class="formula__window-textarea"
                     ></textarea>
                   </label>
                 </li>
               </ul>
             </li>
             <li>
-              <div class="from-field">
+              <div class="from_field">
                 <input
                   type="checkbox"
-                  class="form--input"
+                  class="form__input"
                   name="statement"
                   value="declaration"
                   id="declaration"
                 />
-                <label class="form--label" for="declaration"
+                <label class="form__label" for="declaration"
                   >Oświadczam iż akceptuję
                   <a href="/Regulamin" class="blue">Regulamin</a> i
                   <a href="/Regulamin" class="blue">Politykę Prywatności</a
@@ -613,7 +619,7 @@
               </div>
             </li>
             <li>
-              <button type="submit" class="window_button">Wyślij</button>
+              <button type="submit" class="window__button">Wyślij</button>
             </li>
           </ul>
         </form>
