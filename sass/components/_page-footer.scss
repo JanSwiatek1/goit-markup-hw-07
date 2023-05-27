@@ -20,10 +20,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     align-content: center;
     gap: 60px;
     list-style-type: none;
+    padding-top: 72px;
 
 
     &-info {
@@ -40,12 +41,12 @@
     }
 }
 
-.footer__list__positioner {
-    padding-top: 56px;
-    &__logo {
-        padding-top: 90px;
-    }
-}
+// .footer__list__positioner {
+//     padding-top: 56px;
+//     &__logo {
+//         padding-top: 90px;
+//     }
+// }
 
 
 .footer__adress {
